@@ -86,9 +86,7 @@ const TodosList = ({ items, userId }) => {
                     inputProps={{ "aria-labelledby": labelId }}
                   />
                 </ListItemIcon>
-//                <ListItemText id={labelId} primary={item.taskText} />
                 <ListItemText id={labelId} primary={item.taskText} sx={{ textDecoration: (checked.indexOf(value) !== -1) ? "line-through" : "none" , textDecorationColor: "#a404b2", textDecorationThickness: "0.2rem"}} />
-
               </ListItemButton>
             </ListItem>
           );
